@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rankim's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-950 text-white min-h-screen">
+
+  <!-- NAVBAR -->
+  <nav class="sticky top-0 z-50 bg-gray-950 flex justify-between items-center px-6 py-5 border-b border-gray-800">
+    <h1 class="text-xl font-bold text-green-400">MyPortfolio</h1>
+    <div class="hidden md:flex gap-6 text-gray-400 text-sm items-center">
+      <a href="#about" class="hover:text-white">About</a>
+      <a href="#projects" class="hover:text-white">Projects</a>
+      <a href="#contact" class="hover:text-white">Contact</a>
+      <a href="resume.pdf" target="_blank" class="bg-green-400 text-black px-4 py-1.5 rounded-lg font-semibold hover:bg-green-300">Resume</a>
+    </div>
+    <button id="menu-btn" class="md:hidden text-gray-400 text-2xl">☰</button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" style="display:none; flex-direction:column;" class="bg-gray-900 border-b border-gray-800 px-6 py-4 gap-4">
+    <a href="#about" class="text-gray-400 hover:text-white">About</a>
+    <a href="#projects" class="text-gray-400 hover:text-white">Projects</a>
+    <a href="#contact" class="text-gray-400 hover:text-white">Contact</a>
+    <a href="resume.pdf" target="_blank" class="bg-green-400 text-black px-4 py-2 rounded-lg font-semibold text-center">Resume</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="px-6 pt-16 pb-14 max-w-4xl mx-auto">
+    <p class="text-green-400 text-sm mb-3">👋 Hello, I am</p>
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Rankim Nendelmwa Sunday</h1>
+    <h3 class="text-gray-400 text-base md:text-lg max-w-lg">Frontend Developer & Quality Assurance Tester</h3>
+    <p class="text-gray-400 mt-6 max-w-lg">I create responsive, user-friendly web applications and ensure digital products deliver seamless user experiences. From designing intuitive interfaces to identifying and resolving bugs,I help transform ideas into reliable,high-performing solutions.</p>
+    <p class="text-gray-400 mt-6 max-w-lg">Explore my projects and feel free to reach out for collaborations or opportunities. Let's build something amazing together!</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="px-6 py-16 max-w-4xl mx-auto border-t border-gray-800">
+    <h2 class="text-3xl font-bold mb-6">About <span class="text-green-400">Me</span></h2>
+    <div class="flex flex-col md:flex-row gap-10">
+      <div class="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gray-700 flex items-center justify-center text-5xl shrink-0 mx-auto md:mx-0">🧑‍💻</div>
+      <div class="flex flex-col gap-4 text-gray-400 leading-relaxed">
+        <p>Hi! I am a passionate frontend developer and quality assurance tester with a strong interest in building modern,accessible,engaging web experiences. I enjoy turning ideas into funtional applications using clean and maintainable code,responsive design, user-centered approaches and best development practices.</p>
+        <p>Beyond development, i have a keen eye for details and enjoy testing applications to identify bugs,improve usability, and ensure a smooth user experience.My goal is to create digital products that not only look great but also perform reliably.</p>
+        <p>When I'm not coding or testing, you can find me exploring new technologies, sharing my knowledge mentoring and learning. I'm always eager to learn and collaborate on exciting projects that make a positive impact.</p>
+        <div id="about-stats" class="flex gap-6 mt-2 text-white font-semibold"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="px-6 py-16 max-w-4xl mx-auto border-t border-gray-800">
+    <h2 class="text-3xl font-bold mb-2">My <span class="text-green-400">Projects</span></h2>
+    <p class="text-gray-400 mb-6">Search a project to see full details</p>
+
+    <!-- SEARCH inside projects section -->
+    <input id="search" type="text" placeholder="Search projects..."
+      class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-green-400 mb-8"
+    />
+
+    <!-- Title list -->
+    <ul id="title-list" class="flex flex-col gap-3"></ul>
+
+    <!-- Cards after search -->
+    <div id="grid" class="project-grid"></div>
+
+    <!-- No results -->
+    <p id="empty" style="display:none;" class="text-center text-gray-500 py-10">No projects found.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="px-6 py-16 max-w-4xl mx-auto border-t border-gray-800">
+    <h2 class="text-3xl font-bold mb-6">Get in <span class="text-green-400">Touch</span></h2>
+    <p class="text-gray-400 mb-8">Have a project in mind,need a website or looking for someone to help improve your appliation's quality? I'd love to hear from you</p>
+    <p class="text-gray-400 mb-4">Feel free to reach out for collaborations, freelance opportunities or just to say hi! You can reach me through the following channels:</p>
+    <div class="flex flex-wrap gap-4">
+      <a href="mailto:rankimnendelmwa@gmail.com" class="bg-green-400 text-black px-4 py-2 rounded-lg font-semibold hover:bg-green-300">Email</a>
+      <a href="https://linkedin.com/in/rankim-nendelmwa" target="_blank" class="bg-green-400 text-black px-4 py-2 rounded-lg font-semibold hover:bg-green-300">LinkedIn</a>
+      <a href="https://github.com/rankimphina" target="_blank" class="bg-green-400 text-black px-4 py-2 rounded-lg font-semibold hover:bg-green-300">GitHub</a>
+        <a href="https://twitter.com/phinarankim" target="_blank" class="bg-green-400 text-black px-4 py-2 rounded-lg font-semibold hover:bg-green-300">Twitter</a>
+    </div>
+  </section>
+
+  <footer class="text-center text-gray-600 text-sm py-8 border-t border-gray-800">
+    Built by Rankim Nendelmwa Sunday © 2026
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

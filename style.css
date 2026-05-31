@@ -1,0 +1,15 @@
+.project-grid {
+  display: none;
+}
+
+.project-grid.active {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 400px) {
+  .project-grid.active {
+    grid-template-columns: 1fr;
+  }
+}
