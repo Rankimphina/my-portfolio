@@ -15,7 +15,7 @@ the description, technologies used and a link to the GitHub repo.
 
 
 ## Live Site
-coming soon
+https://rankimphina.github.io/my-portfolio/
 
 ## How to Run
 1. Download or clone the repo
@@ -31,8 +31,10 @@ coming soon
 - HTML
 - Tailwind CSS
 - JavaScript
+- CSS
 
 ## Contact
 - Email: rankimnendelmwa@gmail.com
 - GitHub: https://github.com/rankimphina
-- LinkedIn: https://linkedin.com/in/rankimnendelmwa
+- LinkedIn: https://linkedin.com/in/rankim-nendelmwa
+- Twitter: https://twitter.com/phinarankim
